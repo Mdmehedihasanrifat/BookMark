@@ -1,0 +1,82 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>My BookMark</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+<div class="container mt-4">
+   <div class="display-4 text-center">
+
+     <h1 class="text-primary">  <i class="fas fa-book-open"></i>  <span class="text-success">My</span>  BookMark</h1>
+   </div>
+
+  <form name="Form" id="Form" method="post" class="form-control">
+
+    <label for="BookName" class="text-black" style="font-weight: bolder"> Book Name:</label>
+    <input type="text" name="Bookname" id="BookName" placeholder="Insert Book Name" class="form-control">
+
+    <label for="aName" class="text-black" style="font-weight: bolder"> Author Name:</label>
+    <input type="text" name="aName" id="aName" placeholder="Insert Author  Name" class="form-control">
+    <label for="Icbn" class="text-black" style="font-weight: bolder"> Icbn</label>
+    <input type="text" name="Icbn" id="Icbn" placeholder="Insert Icbn NO" class="form-control">
+
+
+    <input type="submit" name="submit" id="submit" value="Submit" class="form-control bg-success text-white mt-2">
+
+
+
+  </form>
+
+  <table class="table table-striped table-bordered mt-5">
+   <thead>
+    <tr>
+      <th>BookName</th>
+      <th>Author</th>
+      <th>Icbn No </th>
+    </tr>
+    </thead>
+    <tbody id="Book-List">
+
+    </tbody>
+  </table>
+
+</div>
+
+
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
